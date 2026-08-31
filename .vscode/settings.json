@@ -1,0 +1,16 @@
+{
+  // Kill all automatic suggestion popups & ghost text
+  "editor.quickSuggestions": false,
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.inlineSuggest.enabled": false,
+  "editor.wordBasedSuggestions": "off",
+  "editor.acceptSuggestionOnEnter": "off",
+
+  // Kill parameter hints & hover tooltips (reduces distraction)
+  "editor.parameterHints.enabled": false,
+  "editor.hover.enabled": false,
+
+  // Java: keep the language server's completion engine on
+  // so Ctrl+Space still works for imports when you need it
+  "java.completion.enabled": true
+}   
