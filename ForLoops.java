@@ -1,15 +1,29 @@
-public class ForLoops{
+import java.util.Scanner;
+public class ForLoops {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws InterruptedException{
 
-        // For loops in java-For loops execute for a finite number of times
+        // Simulate a count down
 
-        for(int i =0; i <=10; i++){
+
+        Scanner inputScanner = new Scanner(System.in);
+
+        System.out.print("We want to simulate a count down, where should we begin: ");
+
+        int countDownStart= inputScanner.nextInt();
+
+
+        for(int i=countDownStart; i>=1; i--){
 
             System.out.println(i);
-
+            Thread.sleep(1000);
         }
 
 
+        System.out.println("HAPPY NEW YEAR");
+
+        inputScanner.close();
+
     }
+    
 }
